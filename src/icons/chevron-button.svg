@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>9201F024-A754-44D1-A64B-AE381094CF24</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Categories" transform="translate(-1166.000000, -30.000000)" fill="#1A9BDB">
+            <g id="Items">
+                <g transform="translate(204.000000, 0.000000)">
+                    <g id="Item" transform="translate(704.000000, 0.000000)">
+                        <g id="ChevronButton" transform="translate(258.000000, 30.000000)">
+                            <path d="M0,9 C0,4.02943725 4.02943725,8.8817842e-16 9,8.8817842e-16 C13.9705627,8.8817842e-16 18,4.02943725 18,9 C18,13.9705627 13.9705627,18 9,18 C4.02943725,18 0,13.9705627 0,9 Z M10.4414412,8.99789867 L6.96966991,12.4696699 C6.6767767,12.7625631 6.6767767,13.2374369 6.96966991,13.5303301 C7.26256313,13.8232233 7.73743687,13.8232233 8.03033009,13.5303301 L12.0303301,9.53033009 C12.3232233,9.23743687 12.3232233,8.76256313 12.0303301,8.46966991 L8.03033009,4.46966991 C7.73743687,4.1767767 7.26256313,4.1767767 6.96966991,4.46966991 C6.6767767,4.76256313 6.6767767,5.23743687 6.96966991,5.53033009 L10.4414412,8.99789867 Z" id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
