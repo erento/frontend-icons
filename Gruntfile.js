@@ -10,7 +10,7 @@ module.exports = function(grunt) {
           skip: require('os').platform() === 'win32',
           stylesheet: 'scss',
           startCodepoint: 0xE001,
-          relativeFontPath: '/static/frontend-search/assets/fonts',
+          relativeFontPath: '" + $erentoIconFontPath + "',
           template: './src/scss/_icons.scss',
           templateOptions: {
             baseClass: 'icon',
