@@ -1,9 +1,25 @@
+
+
+@function getIconFromMap($map, $name...) {
+  $i: 1;
+  $length: length($name);
+
+  @while $length >= $i  {
+    $map: map-get($map, nth($name, $i));
+    $i: $i + 1;
+  }
+
+  @return $map;
+}
+
+
+
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?1154d59337fee3c8b49fe4b016e6d00a");
+src:url("" + $erentoIconFontPath + "/icons.eot?32d4b1bae74219b00c6f6a8f00ffacc6");
 src:url("" + $erentoIconFontPath + "/icons.eot?#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?1154d59337fee3c8b49fe4b016e6d00a") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?1154d59337fee3c8b49fe4b016e6d00a") format("truetype");
+		url("" + $erentoIconFontPath + "/icons.woff?32d4b1bae74219b00c6f6a8f00ffacc6") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?32d4b1bae74219b00c6f6a8f00ffacc6") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -70,7 +86,7 @@ icon--users: "\e023",
 
 %icon--approved-badge {
 &:before {
-   content: "#{var($icons, icon--approved-badge)}";
+   content: "#{getIconFromMap($icons, icon--approved-badge)}";
  }
 }
 .icon--approved-badge{
@@ -79,7 +95,7 @@ icon--users: "\e023",
 
 %icon--arrow {
 &:before {
-   content: "#{var($icons, icon--arrow)}";
+   content: "#{getIconFromMap($icons, icon--arrow)}";
  }
 }
 .icon--arrow{
@@ -88,7 +104,7 @@ icon--users: "\e023",
 
 %icon--attachment-blue {
 &:before {
-   content: "#{var($icons, icon--attachment-blue)}";
+   content: "#{getIconFromMap($icons, icon--attachment-blue)}";
  }
 }
 .icon--attachment-blue{
@@ -97,7 +113,7 @@ icon--users: "\e023",
 
 %icon--calendar {
 &:before {
-   content: "#{var($icons, icon--calendar)}";
+   content: "#{getIconFromMap($icons, icon--calendar)}";
  }
 }
 .icon--calendar{
@@ -106,7 +122,7 @@ icon--users: "\e023",
 
 %icon--checkmark {
 &:before {
-   content: "#{var($icons, icon--checkmark)}";
+   content: "#{getIconFromMap($icons, icon--checkmark)}";
  }
 }
 .icon--checkmark{
@@ -115,7 +131,7 @@ icon--users: "\e023",
 
 %icon--chevron-button {
 &:before {
-   content: "#{var($icons, icon--chevron-button)}";
+   content: "#{getIconFromMap($icons, icon--chevron-button)}";
  }
 }
 .icon--chevron-button{
@@ -124,7 +140,7 @@ icon--users: "\e023",
 
 %icon--chevron-l {
 &:before {
-   content: "#{var($icons, icon--chevron-l)}";
+   content: "#{getIconFromMap($icons, icon--chevron-l)}";
  }
 }
 .icon--chevron-l{
@@ -133,7 +149,7 @@ icon--users: "\e023",
 
 %icon--chevron {
 &:before {
-   content: "#{var($icons, icon--chevron)}";
+   content: "#{getIconFromMap($icons, icon--chevron)}";
  }
 }
 .icon--chevron{
@@ -142,7 +158,7 @@ icon--users: "\e023",
 
 %icon--clock {
 &:before {
-   content: "#{var($icons, icon--clock)}";
+   content: "#{getIconFromMap($icons, icon--clock)}";
  }
 }
 .icon--clock{
@@ -151,7 +167,7 @@ icon--users: "\e023",
 
 %icon--close {
 &:before {
-   content: "#{var($icons, icon--close)}";
+   content: "#{getIconFromMap($icons, icon--close)}";
  }
 }
 .icon--close{
@@ -160,7 +176,7 @@ icon--users: "\e023",
 
 %icon--current-location {
 &:before {
-   content: "#{var($icons, icon--current-location)}";
+   content: "#{getIconFromMap($icons, icon--current-location)}";
  }
 }
 .icon--current-location{
@@ -169,7 +185,7 @@ icon--users: "\e023",
 
 %icon--direct-booking {
 &:before {
-   content: "#{var($icons, icon--direct-booking)}";
+   content: "#{getIconFromMap($icons, icon--direct-booking)}";
  }
 }
 .icon--direct-booking{
@@ -178,7 +194,7 @@ icon--users: "\e023",
 
 %icon--download {
 &:before {
-   content: "#{var($icons, icon--download)}";
+   content: "#{getIconFromMap($icons, icon--download)}";
  }
 }
 .icon--download{
@@ -187,7 +203,7 @@ icon--users: "\e023",
 
 %icon--dropdown-indicator {
 &:before {
-   content: "#{var($icons, icon--dropdown-indicator)}";
+   content: "#{getIconFromMap($icons, icon--dropdown-indicator)}";
  }
 }
 .icon--dropdown-indicator{
@@ -196,7 +212,7 @@ icon--users: "\e023",
 
 %icon--f-a-q {
 &:before {
-   content: "#{var($icons, icon--f-a-q)}";
+   content: "#{getIconFromMap($icons, icon--f-a-q)}";
  }
 }
 .icon--f-a-q{
@@ -205,7 +221,7 @@ icon--users: "\e023",
 
 %icon--hamburger-menu {
 &:before {
-   content: "#{var($icons, icon--hamburger-menu)}";
+   content: "#{getIconFromMap($icons, icon--hamburger-menu)}";
  }
 }
 .icon--hamburger-menu{
@@ -214,7 +230,7 @@ icon--users: "\e023",
 
 %icon--help-badge {
 &:before {
-   content: "#{var($icons, icon--help-badge)}";
+   content: "#{getIconFromMap($icons, icon--help-badge)}";
  }
 }
 .icon--help-badge{
@@ -223,7 +239,7 @@ icon--users: "\e023",
 
 %icon--help {
 &:before {
-   content: "#{var($icons, icon--help)}";
+   content: "#{getIconFromMap($icons, icon--help)}";
  }
 }
 .icon--help{
@@ -232,7 +248,7 @@ icon--users: "\e023",
 
 %icon--home {
 &:before {
-   content: "#{var($icons, icon--home)}";
+   content: "#{getIconFromMap($icons, icon--home)}";
  }
 }
 .icon--home{
@@ -241,7 +257,7 @@ icon--users: "\e023",
 
 %icon--lightning {
 &:before {
-   content: "#{var($icons, icon--lightning)}";
+   content: "#{getIconFromMap($icons, icon--lightning)}";
  }
 }
 .icon--lightning{
@@ -250,7 +266,7 @@ icon--users: "\e023",
 
 %icon--location {
 &:before {
-   content: "#{var($icons, icon--location)}";
+   content: "#{getIconFromMap($icons, icon--location)}";
  }
 }
 .icon--location{
@@ -259,7 +275,7 @@ icon--users: "\e023",
 
 %icon--lock {
 &:before {
-   content: "#{var($icons, icon--lock)}";
+   content: "#{getIconFromMap($icons, icon--lock)}";
  }
 }
 .icon--lock{
@@ -268,7 +284,7 @@ icon--users: "\e023",
 
 %icon--logo_letters {
 &:before {
-   content: "#{var($icons, icon--logo_letters)}";
+   content: "#{getIconFromMap($icons, icon--logo_letters)}";
  }
 }
 .icon--logo_letters{
@@ -277,7 +293,7 @@ icon--users: "\e023",
 
 %icon--logo {
 &:before {
-   content: "#{var($icons, icon--logo)}";
+   content: "#{getIconFromMap($icons, icon--logo)}";
  }
 }
 .icon--logo{
@@ -286,7 +302,7 @@ icon--users: "\e023",
 
 %icon--mail {
 &:before {
-   content: "#{var($icons, icon--mail)}";
+   content: "#{getIconFromMap($icons, icon--mail)}";
  }
 }
 .icon--mail{
@@ -295,7 +311,7 @@ icon--users: "\e023",
 
 %icon--mobile-phone {
 &:before {
-   content: "#{var($icons, icon--mobile-phone)}";
+   content: "#{getIconFromMap($icons, icon--mobile-phone)}";
  }
 }
 .icon--mobile-phone{
@@ -304,7 +320,7 @@ icon--users: "\e023",
 
 %icon--percentage {
 &:before {
-   content: "#{var($icons, icon--percentage)}";
+   content: "#{getIconFromMap($icons, icon--percentage)}";
  }
 }
 .icon--percentage{
@@ -313,7 +329,7 @@ icon--users: "\e023",
 
 %icon--phone {
 &:before {
-   content: "#{var($icons, icon--phone)}";
+   content: "#{getIconFromMap($icons, icon--phone)}";
  }
 }
 .icon--phone{
@@ -322,7 +338,7 @@ icon--users: "\e023",
 
 %icon--search {
 &:before {
-   content: "#{var($icons, icon--search)}";
+   content: "#{getIconFromMap($icons, icon--search)}";
  }
 }
 .icon--search{
@@ -331,7 +347,7 @@ icon--users: "\e023",
 
 %icon--facebook {
 &:before {
-   content: "#{var($icons, icon--facebook)}";
+   content: "#{getIconFromMap($icons, icon--facebook)}";
  }
 }
 .icon--facebook{
@@ -340,7 +356,7 @@ icon--users: "\e023",
 
 %icon--google-plus {
 &:before {
-   content: "#{var($icons, icon--google-plus)}";
+   content: "#{getIconFromMap($icons, icon--google-plus)}";
  }
 }
 .icon--google-plus{
@@ -349,7 +365,7 @@ icon--users: "\e023",
 
 %icon--instagram {
 &:before {
-   content: "#{var($icons, icon--instagram)}";
+   content: "#{getIconFromMap($icons, icon--instagram)}";
  }
 }
 .icon--instagram{
@@ -358,7 +374,7 @@ icon--users: "\e023",
 
 %icon--twitter {
 &:before {
-   content: "#{var($icons, icon--twitter)}";
+   content: "#{getIconFromMap($icons, icon--twitter)}";
  }
 }
 .icon--twitter{
@@ -367,7 +383,7 @@ icon--users: "\e023",
 
 %icon--upload {
 &:before {
-   content: "#{var($icons, icon--upload)}";
+   content: "#{getIconFromMap($icons, icon--upload)}";
  }
 }
 .icon--upload{
@@ -376,7 +392,7 @@ icon--users: "\e023",
 
 %icon--users {
 &:before {
-   content: "#{var($icons, icon--users)}";
+   content: "#{getIconFromMap($icons, icon--users)}";
  }
 }
 .icon--users{

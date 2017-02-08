@@ -1,3 +1,19 @@
+<% if (iconsStyles) { %>
+<% if (stylesheet === 'scss') { %>
+@function getIconFromMap($map, $name...) {
+  $i: 1;
+  $length: length($name);
+
+  @while $length >= $i  {
+    $map: map-get($map, nth($name, $i));
+    $i: $i + 1;
+  }
+
+  @return $map;
+}
+<% } %>
+<% } %>
+
 <% if (fontfaceStyles) { %>@font-face {
   font-family:"<%= fontBaseName %>";<% if (fontSrc1) { %>
 src:<%= fontSrc1 %>;<% }%>
@@ -35,7 +51,7 @@ $icons: (
 <% if (stylesheet === 'scss') { %>
 %<%= mixinPrefix %><%= glyphs[glyphIdx] %> {
 &:before {
-   content: "#{var($icons, <%= mixinPrefix %><%= glyphs[glyphIdx] %>)}";
+   content: "#{getIconFromMap($icons, <%= mixinPrefix %><%= glyphs[glyphIdx] %>)}";
  }
 }
 .<%= classPrefix %><%= glyphs[glyphIdx] %>{
