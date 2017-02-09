@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?32d4b1bae74219b00c6f6a8f00ffacc6");
+src:url("" + $erentoIconFontPath + "/icons.eot?07a310837fa8285a062d42bf8950999a");
 src:url("" + $erentoIconFontPath + "/icons.eot?#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?32d4b1bae74219b00c6f6a8f00ffacc6") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?32d4b1bae74219b00c6f6a8f00ffacc6") format("truetype");
+		url("" + $erentoIconFontPath + "/icons.woff?07a310837fa8285a062d42bf8950999a") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?07a310837fa8285a062d42bf8950999a") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -74,12 +74,13 @@ icon--mobile-phone: "\e01a",
 icon--percentage: "\e01b", 
 icon--phone: "\e01c", 
 icon--search: "\e01d", 
-icon--facebook: "\e01e", 
-icon--google-plus: "\e01f", 
-icon--instagram: "\e020", 
-icon--twitter: "\e021", 
-icon--upload: "\e022", 
-icon--users: "\e023", 
+icon--send_message: "\e01e", 
+icon--facebook: "\e01f", 
+icon--google-plus: "\e020", 
+icon--instagram: "\e021", 
+icon--twitter: "\e022", 
+icon--upload: "\e023", 
+icon--users: "\e024", 
 );
 
 // Icons
@@ -343,6 +344,15 @@ icon--users: "\e023",
 }
 .icon--search{
 @extend %icon--search;
+}
+
+%icon--send_message {
+&:before {
+   content: "#{getIconFromMap($icons, icon--send_message)}";
+ }
+}
+.icon--send_message{
+@extend %icon--send_message;
 }
 
 %icon--facebook {
