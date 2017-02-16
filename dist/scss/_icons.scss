@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?07a310837fa8285a062d42bf8950999a");
+src:url("" + $erentoIconFontPath + "/icons.eot?041c11356b3d87e00c45e4fa99dd15ee");
 src:url("" + $erentoIconFontPath + "/icons.eot?#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?07a310837fa8285a062d42bf8950999a") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?07a310837fa8285a062d42bf8950999a") format("truetype");
+		url("" + $erentoIconFontPath + "/icons.woff?041c11356b3d87e00c45e4fa99dd15ee") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?041c11356b3d87e00c45e4fa99dd15ee") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -64,23 +64,24 @@ icon--hamburger-menu: "\e010",
 icon--help-badge: "\e011", 
 icon--help: "\e012", 
 icon--home: "\e013", 
-icon--lightning: "\e014", 
-icon--location: "\e015", 
-icon--lock: "\e016", 
-icon--logo_letters: "\e017", 
+icon--info-badge: "\e014", 
+icon--lightning: "\e015", 
+icon--location: "\e016", 
+icon--lock: "\e017", 
 icon--logo: "\e018", 
-icon--mail: "\e019", 
-icon--mobile-phone: "\e01a", 
-icon--percentage: "\e01b", 
-icon--phone: "\e01c", 
-icon--search: "\e01d", 
-icon--send_message: "\e01e", 
-icon--facebook: "\e01f", 
-icon--google-plus: "\e020", 
-icon--instagram: "\e021", 
-icon--twitter: "\e022", 
-icon--upload: "\e023", 
-icon--users: "\e024", 
+icon--logo_letters: "\e019", 
+icon--mail: "\e01a", 
+icon--mobile-phone: "\e01b", 
+icon--percentage: "\e01c", 
+icon--phone: "\e01d", 
+icon--search: "\e01e", 
+icon--send_message: "\e01f", 
+icon--facebook: "\e020", 
+icon--google-plus: "\e021", 
+icon--instagram: "\e022", 
+icon--twitter: "\e023", 
+icon--upload: "\e024", 
+icon--users: "\e025", 
 );
 
 // Icons
@@ -256,6 +257,15 @@ icon--users: "\e024",
 @extend %icon--home;
 }
 
+%icon--info-badge {
+&:before {
+   content: "#{getIconFromMap($icons, icon--info-badge)}";
+ }
+}
+.icon--info-badge{
+@extend %icon--info-badge;
+}
+
 %icon--lightning {
 &:before {
    content: "#{getIconFromMap($icons, icon--lightning)}";
@@ -283,15 +293,6 @@ icon--users: "\e024",
 @extend %icon--lock;
 }
 
-%icon--logo_letters {
-&:before {
-   content: "#{getIconFromMap($icons, icon--logo_letters)}";
- }
-}
-.icon--logo_letters{
-@extend %icon--logo_letters;
-}
-
 %icon--logo {
 &:before {
    content: "#{getIconFromMap($icons, icon--logo)}";
@@ -299,6 +300,15 @@ icon--users: "\e024",
 }
 .icon--logo{
 @extend %icon--logo;
+}
+
+%icon--logo_letters {
+&:before {
+   content: "#{getIconFromMap($icons, icon--logo_letters)}";
+ }
+}
+.icon--logo_letters{
+@extend %icon--logo_letters;
 }
 
 %icon--mail {
