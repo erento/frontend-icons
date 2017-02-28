@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?041c11356b3d87e00c45e4fa99dd15ee");
+src:url("" + $erentoIconFontPath + "/icons.eot?40a3a70e13743651d890039c7b8e18cd");
 src:url("" + $erentoIconFontPath + "/icons.eot?#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?041c11356b3d87e00c45e4fa99dd15ee") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?041c11356b3d87e00c45e4fa99dd15ee") format("truetype");
+		url("" + $erentoIconFontPath + "/icons.woff?40a3a70e13743651d890039c7b8e18cd") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?40a3a70e13743651d890039c7b8e18cd") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -65,23 +65,24 @@ icon--help-badge: "\e011",
 icon--help: "\e012", 
 icon--home: "\e013", 
 icon--info-badge: "\e014", 
-icon--lightning: "\e015", 
-icon--location: "\e016", 
-icon--lock: "\e017", 
-icon--logo: "\e018", 
+icon--item: "\e015", 
+icon--lightning: "\e016", 
+icon--location: "\e017", 
+icon--lock: "\e018", 
 icon--logo_letters: "\e019", 
-icon--mail: "\e01a", 
-icon--mobile-phone: "\e01b", 
-icon--percentage: "\e01c", 
-icon--phone: "\e01d", 
-icon--search: "\e01e", 
-icon--send_message: "\e01f", 
-icon--facebook: "\e020", 
-icon--google-plus: "\e021", 
-icon--instagram: "\e022", 
-icon--twitter: "\e023", 
-icon--upload: "\e024", 
-icon--users: "\e025", 
+icon--logo: "\e01a", 
+icon--mail: "\e01b", 
+icon--mobile-phone: "\e01c", 
+icon--percentage: "\e01d", 
+icon--phone: "\e01e", 
+icon--search: "\e01f", 
+icon--send_message: "\e020", 
+icon--facebook: "\e021", 
+icon--google-plus: "\e022", 
+icon--instagram: "\e023", 
+icon--twitter: "\e024", 
+icon--upload: "\e025", 
+icon--users: "\e026", 
 );
 
 // Icons
@@ -266,6 +267,15 @@ icon--users: "\e025",
 @extend %icon--info-badge;
 }
 
+%icon--item {
+&:before {
+   content: "#{getIconFromMap($icons, icon--item)}";
+ }
+}
+.icon--item{
+@extend %icon--item;
+}
+
 %icon--lightning {
 &:before {
    content: "#{getIconFromMap($icons, icon--lightning)}";
@@ -293,15 +303,6 @@ icon--users: "\e025",
 @extend %icon--lock;
 }
 
-%icon--logo {
-&:before {
-   content: "#{getIconFromMap($icons, icon--logo)}";
- }
-}
-.icon--logo{
-@extend %icon--logo;
-}
-
 %icon--logo_letters {
 &:before {
    content: "#{getIconFromMap($icons, icon--logo_letters)}";
@@ -309,6 +310,15 @@ icon--users: "\e025",
 }
 .icon--logo_letters{
 @extend %icon--logo_letters;
+}
+
+%icon--logo {
+&:before {
+   content: "#{getIconFromMap($icons, icon--logo)}";
+ }
+}
+.icon--logo{
+@extend %icon--logo;
 }
 
 %icon--mail {
