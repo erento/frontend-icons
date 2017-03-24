@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?054767900f1cba1e085c2eaf16f85168");
+src:url("" + $erentoIconFontPath + "/icons.eot?65ca5de40e4d359fc40506b456836cc1");
 src:url("" + $erentoIconFontPath + "/icons.eot?#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?054767900f1cba1e085c2eaf16f85168") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?054767900f1cba1e085c2eaf16f85168") format("truetype");
+		url("" + $erentoIconFontPath + "/icons.woff?65ca5de40e4d359fc40506b456836cc1") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?65ca5de40e4d359fc40506b456836cc1") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -48,41 +48,43 @@ $icons: (
 icon--approved-badge: "\e001", 
 icon--arrow: "\e002", 
 icon--attachment-blue: "\e003", 
-icon--calendar: "\e004", 
-icon--checkmark: "\e005", 
-icon--chevron-button: "\e006", 
-icon--chevron-l: "\e007", 
-icon--chevron: "\e008", 
-icon--clock: "\e009", 
-icon--close: "\e00a", 
-icon--current-location: "\e00b", 
-icon--direct-booking: "\e00c", 
-icon--download: "\e00d", 
-icon--dropdown-indicator: "\e00e", 
-icon--f-a-q: "\e00f", 
-icon--hamburger-menu: "\e010", 
-icon--help-badge: "\e011", 
-icon--help: "\e012", 
-icon--home: "\e013", 
-icon--info-badge: "\e014", 
-icon--item: "\e015", 
-icon--lightning: "\e016", 
-icon--location: "\e017", 
-icon--lock: "\e018", 
-icon--logo_letters: "\e019", 
+icon--bell: "\e004", 
+icon--calendar: "\e005", 
+icon--checkmark: "\e006", 
+icon--chevron-button: "\e007", 
+icon--chevron-l: "\e008", 
+icon--chevron: "\e009", 
+icon--clock: "\e00a", 
+icon--close: "\e00b", 
+icon--current-location: "\e00c", 
+icon--direct-booking: "\e00d", 
+icon--download: "\e00e", 
+icon--dropdown-indicator: "\e00f", 
+icon--f-a-q: "\e010", 
+icon--hamburger-menu: "\e011", 
+icon--help-badge: "\e012", 
+icon--help: "\e013", 
+icon--home: "\e014", 
+icon--info-badge: "\e015", 
+icon--item: "\e016", 
+icon--lightning: "\e017", 
+icon--location: "\e018", 
+icon--lock: "\e019", 
 icon--logo: "\e01a", 
-icon--mail: "\e01b", 
-icon--mobile-phone: "\e01c", 
-icon--percentage: "\e01d", 
-icon--phone: "\e01e", 
-icon--search: "\e01f", 
-icon--send_message: "\e020", 
-icon--facebook: "\e021", 
-icon--google-plus: "\e022", 
-icon--instagram: "\e023", 
-icon--twitter: "\e024", 
-icon--upload: "\e025", 
-icon--users: "\e026", 
+icon--logo_letters: "\e01b", 
+icon--mail: "\e01c", 
+icon--mobile-phone: "\e01d", 
+icon--percentage: "\e01e", 
+icon--phone: "\e01f", 
+icon--search: "\e020", 
+icon--send_message: "\e021", 
+icon--facebook: "\e022", 
+icon--google-plus: "\e023", 
+icon--instagram: "\e024", 
+icon--twitter: "\e025", 
+icon--teal-balloon: "\e026", 
+icon--upload: "\e027", 
+icon--users: "\e028", 
 );
 
 // Icons
@@ -112,6 +114,15 @@ icon--users: "\e026",
 }
 .icon--attachment-blue{
 @extend %icon--attachment-blue;
+}
+
+%icon--bell {
+&:before {
+   content: "#{getIconFromMap($icons, icon--bell)}";
+ }
+}
+.icon--bell{
+@extend %icon--bell;
 }
 
 %icon--calendar {
@@ -303,15 +314,6 @@ icon--users: "\e026",
 @extend %icon--lock;
 }
 
-%icon--logo_letters {
-&:before {
-   content: "#{getIconFromMap($icons, icon--logo_letters)}";
- }
-}
-.icon--logo_letters{
-@extend %icon--logo_letters;
-}
-
 %icon--logo {
 &:before {
    content: "#{getIconFromMap($icons, icon--logo)}";
@@ -319,6 +321,15 @@ icon--users: "\e026",
 }
 .icon--logo{
 @extend %icon--logo;
+}
+
+%icon--logo_letters {
+&:before {
+   content: "#{getIconFromMap($icons, icon--logo_letters)}";
+ }
+}
+.icon--logo_letters{
+@extend %icon--logo_letters;
 }
 
 %icon--mail {
@@ -409,6 +420,15 @@ icon--users: "\e026",
 }
 .icon--twitter{
 @extend %icon--twitter;
+}
+
+%icon--teal-balloon {
+&:before {
+   content: "#{getIconFromMap($icons, icon--teal-balloon)}";
+ }
+}
+.icon--teal-balloon{
+@extend %icon--teal-balloon;
 }
 
 %icon--upload {
