@@ -1,6 +1,6 @@
 {
   "name": "frontend-icons",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Module for custom icons for erento frontends",
   "main": "index.js",
   "scripts": {
