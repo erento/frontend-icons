@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?7bda2a894222523b1c9536a79d4ffea9");
+src:url("" + $erentoIconFontPath + "/icons.eot?96dcea79bee3673944e3dbc6979855bf");
 src:url("" + $erentoIconFontPath + "/icons.eot?#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?7bda2a894222523b1c9536a79d4ffea9") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?7bda2a894222523b1c9536a79d4ffea9") format("truetype");
+		url("" + $erentoIconFontPath + "/icons.woff?96dcea79bee3673944e3dbc6979855bf") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?96dcea79bee3673944e3dbc6979855bf") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -50,47 +50,51 @@ icon--approved-badge: "\e002",
 icon--arrow: "\e003", 
 icon--attachment-blue: "\e004", 
 icon--bell: "\e005", 
-icon--calendar: "\e006", 
-icon--change-date: "\e007", 
-icon--checkmark: "\e008", 
-icon--chevron-button: "\e009", 
-icon--chevron-l: "\e00a", 
-icon--chevron: "\e00b", 
-icon--clock: "\e00c", 
-icon--close: "\e00d", 
-icon--current-location: "\e00e", 
-icon--direct-booking: "\e00f", 
-icon--download: "\e010", 
-icon--dropdown-indicator: "\e011", 
-icon--due-dates: "\e012", 
-icon--f-a-q: "\e013", 
-icon--hamburger-menu: "\e014", 
-icon--help-badge: "\e015", 
-icon--help: "\e016", 
-icon--home: "\e017", 
-icon--info-badge: "\e018", 
-icon--item: "\e019", 
-icon--lightning: "\e01a", 
-icon--location: "\e01b", 
-icon--lock: "\e01c", 
-icon--logo_letters: "\e01d", 
-icon--logo: "\e01e", 
-icon--mail: "\e01f", 
-icon--mobile-phone: "\e020", 
-icon--new-offer: "\e021", 
-icon--percentage: "\e022", 
-icon--phone: "\e023", 
-icon--righer-ranking: "\e024", 
-icon--search: "\e025", 
-icon--send_message: "\e026", 
-icon--facebook: "\e027", 
-icon--google-plus: "\e028", 
-icon--instagram: "\e029", 
-icon--twitter: "\e02a", 
-icon--teal-balloon: "\e02b", 
-icon--upload: "\e02c", 
-icon--use-discounts: "\e02d", 
-icon--users: "\e02e", 
+icon--best-price: "\e006", 
+icon--calendar: "\e007", 
+icon--cancellation-terms: "\e008", 
+icon--change-date: "\e009", 
+icon--checkmark: "\e00a", 
+icon--chevron-button: "\e00b", 
+icon--chevron-l: "\e00c", 
+icon--chevron: "\e00d", 
+icon--clock: "\e00e", 
+icon--close: "\e00f", 
+icon--current-location: "\e010", 
+icon--customer-service: "\e011", 
+icon--direct-booking: "\e012", 
+icon--download: "\e013", 
+icon--dropdown-indicator: "\e014", 
+icon--due-dates: "\e015", 
+icon--easy-payment: "\e016", 
+icon--f-a-q: "\e017", 
+icon--hamburger-menu: "\e018", 
+icon--help-badge: "\e019", 
+icon--help: "\e01a", 
+icon--higher-ranking: "\e01b", 
+icon--home: "\e01c", 
+icon--info-badge: "\e01d", 
+icon--item: "\e01e", 
+icon--lightning: "\e01f", 
+icon--location: "\e020", 
+icon--lock: "\e021", 
+icon--logo_letters: "\e022", 
+icon--logo: "\e023", 
+icon--mail: "\e024", 
+icon--mobile-phone: "\e025", 
+icon--new-offer: "\e026", 
+icon--percentage: "\e027", 
+icon--phone: "\e028", 
+icon--search: "\e029", 
+icon--send_message: "\e02a", 
+icon--facebook: "\e02b", 
+icon--google-plus: "\e02c", 
+icon--instagram: "\e02d", 
+icon--twitter: "\e02e", 
+icon--teal-balloon: "\e02f", 
+icon--upload: "\e030", 
+icon--use-discounts: "\e031", 
+icon--users: "\e032", 
 );
 
 // Icons
@@ -140,6 +144,15 @@ icon--users: "\e02e",
 @extend %icon--bell;
 }
 
+%icon--best-price {
+&:before {
+   content: "#{getIconFromMap($icons, icon--best-price)}";
+ }
+}
+.icon--best-price{
+@extend %icon--best-price;
+}
+
 %icon--calendar {
 &:before {
    content: "#{getIconFromMap($icons, icon--calendar)}";
@@ -147,6 +160,15 @@ icon--users: "\e02e",
 }
 .icon--calendar{
 @extend %icon--calendar;
+}
+
+%icon--cancellation-terms {
+&:before {
+   content: "#{getIconFromMap($icons, icon--cancellation-terms)}";
+ }
+}
+.icon--cancellation-terms{
+@extend %icon--cancellation-terms;
 }
 
 %icon--change-date {
@@ -221,6 +243,15 @@ icon--users: "\e02e",
 @extend %icon--current-location;
 }
 
+%icon--customer-service {
+&:before {
+   content: "#{getIconFromMap($icons, icon--customer-service)}";
+ }
+}
+.icon--customer-service{
+@extend %icon--customer-service;
+}
+
 %icon--direct-booking {
 &:before {
    content: "#{getIconFromMap($icons, icon--direct-booking)}";
@@ -257,6 +288,15 @@ icon--users: "\e02e",
 @extend %icon--due-dates;
 }
 
+%icon--easy-payment {
+&:before {
+   content: "#{getIconFromMap($icons, icon--easy-payment)}";
+ }
+}
+.icon--easy-payment{
+@extend %icon--easy-payment;
+}
+
 %icon--f-a-q {
 &:before {
    content: "#{getIconFromMap($icons, icon--f-a-q)}";
@@ -291,6 +331,15 @@ icon--users: "\e02e",
 }
 .icon--help{
 @extend %icon--help;
+}
+
+%icon--higher-ranking {
+&:before {
+   content: "#{getIconFromMap($icons, icon--higher-ranking)}";
+ }
+}
+.icon--higher-ranking{
+@extend %icon--higher-ranking;
 }
 
 %icon--home {
@@ -408,15 +457,6 @@ icon--users: "\e02e",
 }
 .icon--phone{
 @extend %icon--phone;
-}
-
-%icon--righer-ranking {
-&:before {
-   content: "#{getIconFromMap($icons, icon--righer-ranking)}";
- }
-}
-.icon--righer-ranking{
-@extend %icon--righer-ranking;
 }
 
 %icon--search {
