@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?88d9d099fb5a59e91db2b0df4072851f");
+src:url("" + $erentoIconFontPath + "/icons.eot?51e6ff31cc9f801da41679ec0035ccd5");
 src:url("" + $erentoIconFontPath + "/icons.eot?#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?88d9d099fb5a59e91db2b0df4072851f") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?88d9d099fb5a59e91db2b0df4072851f") format("truetype");
+		url("" + $erentoIconFontPath + "/icons.woff?51e6ff31cc9f801da41679ec0035ccd5") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?51e6ff31cc9f801da41679ec0035ccd5") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -68,34 +68,35 @@ icon--dropdown-indicator: "\e014",
 icon--due-dates: "\e015", 
 icon--easy-payment: "\e016", 
 icon--f-a-q: "\e017", 
-icon--hamburger-menu: "\e018", 
-icon--help-badge: "\e019", 
-icon--help: "\e01a", 
-icon--higher-ranking: "\e01b", 
-icon--home: "\e01c", 
-icon--info-badge: "\e01d", 
-icon--item: "\e01e", 
-icon--lightning: "\e01f", 
-icon--location: "\e020", 
-icon--lock: "\e021", 
-icon--logo_letters: "\e022", 
+icon--filter: "\e018", 
+icon--hamburger-menu: "\e019", 
+icon--help-badge: "\e01a", 
+icon--help: "\e01b", 
+icon--higher-ranking: "\e01c", 
+icon--home: "\e01d", 
+icon--info-badge: "\e01e", 
+icon--item: "\e01f", 
+icon--lightning: "\e020", 
+icon--location: "\e021", 
+icon--lock: "\e022", 
 icon--logo: "\e023", 
-icon--mail: "\e024", 
-icon--mobile-phone: "\e025", 
-icon--new-offer: "\e026", 
-icon--percentage: "\e027", 
-icon--phone: "\e028", 
-icon--safe-payment: "\e029", 
-icon--search: "\e02a", 
-icon--send_message: "\e02b", 
-icon--facebook: "\e02c", 
-icon--google-plus: "\e02d", 
-icon--instagram: "\e02e", 
-icon--twitter: "\e02f", 
-icon--teal-balloon: "\e030", 
-icon--upload: "\e031", 
-icon--use-discounts: "\e032", 
-icon--users: "\e033", 
+icon--logo_letters: "\e024", 
+icon--mail: "\e025", 
+icon--mobile-phone: "\e026", 
+icon--new-offer: "\e027", 
+icon--percentage: "\e028", 
+icon--phone: "\e029", 
+icon--safe-payment: "\e02a", 
+icon--search: "\e02b", 
+icon--send_message: "\e02c", 
+icon--facebook: "\e02d", 
+icon--google-plus: "\e02e", 
+icon--instagram: "\e02f", 
+icon--twitter: "\e030", 
+icon--teal-balloon: "\e031", 
+icon--upload: "\e032", 
+icon--use-discounts: "\e033", 
+icon--users: "\e034", 
 );
 
 // Icons
@@ -307,6 +308,15 @@ icon--users: "\e033",
 @extend %icon--f-a-q;
 }
 
+%icon--filter {
+&:before {
+   content: "#{getIconFromMap($icons, icon--filter)}";
+ }
+}
+.icon--filter{
+@extend %icon--filter;
+}
+
 %icon--hamburger-menu {
 &:before {
    content: "#{getIconFromMap($icons, icon--hamburger-menu)}";
@@ -397,15 +407,6 @@ icon--users: "\e033",
 @extend %icon--lock;
 }
 
-%icon--logo_letters {
-&:before {
-   content: "#{getIconFromMap($icons, icon--logo_letters)}";
- }
-}
-.icon--logo_letters{
-@extend %icon--logo_letters;
-}
-
 %icon--logo {
 &:before {
    content: "#{getIconFromMap($icons, icon--logo)}";
@@ -413,6 +414,15 @@ icon--users: "\e033",
 }
 .icon--logo{
 @extend %icon--logo;
+}
+
+%icon--logo_letters {
+&:before {
+   content: "#{getIconFromMap($icons, icon--logo_letters)}";
+ }
+}
+.icon--logo_letters{
+@extend %icon--logo_letters;
 }
 
 %icon--mail {
