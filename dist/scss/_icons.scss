@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?ec0dfe16caab692107e53d4ff09b703a");
+src:url("" + $erentoIconFontPath + "/icons.eot?a38dea8f3c10b8f64de6350a6cab4ba4");
 src:url("" + $erentoIconFontPath + "/icons.eot?#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?ec0dfe16caab692107e53d4ff09b703a") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?ec0dfe16caab692107e53d4ff09b703a") format("truetype");
+		url("" + $erentoIconFontPath + "/icons.woff?a38dea8f3c10b8f64de6350a6cab4ba4") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?a38dea8f3c10b8f64de6350a6cab4ba4") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -94,10 +94,11 @@ icon--facebook: "\e02e",
 icon--google-plus: "\e02f", 
 icon--instagram: "\e030", 
 icon--twitter: "\e031", 
-icon--teal-balloon: "\e032", 
-icon--upload: "\e033", 
-icon--use-discounts: "\e034", 
-icon--users: "\e035", 
+icon--tag-icon: "\e032", 
+icon--teal-balloon: "\e033", 
+icon--upload: "\e034", 
+icon--use-discounts: "\e035", 
+icon--users: "\e036", 
 );
 
 // Icons
@@ -541,6 +542,15 @@ icon--users: "\e035",
 }
 .icon--twitter{
 @extend %icon--twitter;
+}
+
+%icon--tag-icon {
+&:before {
+   content: "#{getIconFromMap($icons, icon--tag-icon)}";
+ }
+}
+.icon--tag-icon{
+@extend %icon--tag-icon;
 }
 
 %icon--teal-balloon {
