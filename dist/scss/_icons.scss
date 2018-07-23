@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?a38dea8f3c10b8f64de6350a6cab4ba4");
+src:url("" + $erentoIconFontPath + "/icons.eot?2807939d71b79150c8d89b32ce052e24");
 src:url("" + $erentoIconFontPath + "/icons.eot?#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?a38dea8f3c10b8f64de6350a6cab4ba4") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?a38dea8f3c10b8f64de6350a6cab4ba4") format("truetype");
+		url("" + $erentoIconFontPath + "/icons.woff?2807939d71b79150c8d89b32ce052e24") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?2807939d71b79150c8d89b32ce052e24") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -80,25 +80,26 @@ icon--item: "\e020",
 icon--lightning: "\e021", 
 icon--location: "\e022", 
 icon--lock: "\e023", 
-icon--logo: "\e024", 
-icon--logo_letters: "\e025", 
+icon--logo_letters: "\e024", 
+icon--logo: "\e025", 
 icon--mail: "\e026", 
 icon--mobile-phone: "\e027", 
 icon--new-offer: "\e028", 
 icon--percentage: "\e029", 
 icon--phone: "\e02a", 
-icon--safe-payment: "\e02b", 
-icon--search: "\e02c", 
-icon--send_message: "\e02d", 
-icon--facebook: "\e02e", 
-icon--google-plus: "\e02f", 
-icon--instagram: "\e030", 
-icon--twitter: "\e031", 
-icon--tag-icon: "\e032", 
-icon--teal-balloon: "\e033", 
-icon--upload: "\e034", 
-icon--use-discounts: "\e035", 
-icon--users: "\e036", 
+icon--pressuretag-clock: "\e02b", 
+icon--safe-payment: "\e02c", 
+icon--search: "\e02d", 
+icon--send_message: "\e02e", 
+icon--facebook: "\e02f", 
+icon--google-plus: "\e030", 
+icon--instagram: "\e031", 
+icon--twitter: "\e032", 
+icon--tag-icon: "\e033", 
+icon--teal-balloon: "\e034", 
+icon--upload: "\e035", 
+icon--use-discounts: "\e036", 
+icon--users: "\e037", 
 );
 
 // Icons
@@ -418,15 +419,6 @@ icon--users: "\e036",
 @extend %icon--lock;
 }
 
-%icon--logo {
-&:before {
-   content: "#{getIconFromMap($icons, icon--logo)}";
- }
-}
-.icon--logo{
-@extend %icon--logo;
-}
-
 %icon--logo_letters {
 &:before {
    content: "#{getIconFromMap($icons, icon--logo_letters)}";
@@ -434,6 +426,15 @@ icon--users: "\e036",
 }
 .icon--logo_letters{
 @extend %icon--logo_letters;
+}
+
+%icon--logo {
+&:before {
+   content: "#{getIconFromMap($icons, icon--logo)}";
+ }
+}
+.icon--logo{
+@extend %icon--logo;
 }
 
 %icon--mail {
@@ -479,6 +480,15 @@ icon--users: "\e036",
 }
 .icon--phone{
 @extend %icon--phone;
+}
+
+%icon--pressuretag-clock {
+&:before {
+   content: "#{getIconFromMap($icons, icon--pressuretag-clock)}";
+ }
+}
+.icon--pressuretag-clock{
+@extend %icon--pressuretag-clock;
 }
 
 %icon--safe-payment {
