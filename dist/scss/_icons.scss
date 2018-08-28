@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?6b252cf95efaeca245e390167a978e34");
+src:url("" + $erentoIconFontPath + "/icons.eot?cca3f70a604001d185df7c01a953fbe2");
 src:url("" + $erentoIconFontPath + "/icons.eot?#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?6b252cf95efaeca245e390167a978e34") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?6b252cf95efaeca245e390167a978e34") format("truetype");
+		url("" + $erentoIconFontPath + "/icons.woff?cca3f70a604001d185df7c01a953fbe2") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?cca3f70a604001d185df7c01a953fbe2") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -63,7 +63,7 @@ icon--clock: "\e00f",
 icon--close: "\e010", 
 icon--current-location: "\e011", 
 icon--customer-service: "\e012", 
-icon--delivery-ic: "\e013", 
+icon--delivery: "\e013", 
 icon--direct-booking: "\e014", 
 icon--download: "\e015", 
 icon--dropdown-indicator: "\e016", 
@@ -88,7 +88,7 @@ icon--mobile-phone: "\e028",
 icon--new-offer: "\e029", 
 icon--percentage: "\e02a", 
 icon--phone: "\e02b", 
-icon--pickup-ic: "\e02c", 
+icon--pickup: "\e02c", 
 icon--pressuretag-clock: "\e02d", 
 icon--safe-payment: "\e02e", 
 icon--search: "\e02f", 
@@ -268,13 +268,13 @@ icon--users: "\e039",
 @extend %icon--customer-service;
 }
 
-%icon--delivery-ic {
+%icon--delivery {
 &:before {
-   content: "#{getIconFromMap($icons, icon--delivery-ic)}";
+   content: "#{getIconFromMap($icons, icon--delivery)}";
  }
 }
-.icon--delivery-ic{
-@extend %icon--delivery-ic;
+.icon--delivery{
+@extend %icon--delivery;
 }
 
 %icon--direct-booking {
@@ -493,13 +493,13 @@ icon--users: "\e039",
 @extend %icon--phone;
 }
 
-%icon--pickup-ic {
+%icon--pickup {
 &:before {
-   content: "#{getIconFromMap($icons, icon--pickup-ic)}";
+   content: "#{getIconFromMap($icons, icon--pickup)}";
  }
 }
-.icon--pickup-ic{
-@extend %icon--pickup-ic;
+.icon--pickup{
+@extend %icon--pickup;
 }
 
 %icon--pressuretag-clock {
