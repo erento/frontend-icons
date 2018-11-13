@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?cca3f70a604001d185df7c01a953fbe2");
-src:url("" + $erentoIconFontPath + "/icons.eot?#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?cca3f70a604001d185df7c01a953fbe2") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?cca3f70a604001d185df7c01a953fbe2") format("truetype");
+src:url("" + $erentoIconFontPath + "/icons.eot?d81047098b8abc1fe465dc09d11187a0");
+src:url("" + $erentoIconFontPath + "/icons.eot?d81047098b8abc1fe465dc09d11187a0#iefix") format("embedded-opentype"),
+		url("" + $erentoIconFontPath + "/icons.woff?d81047098b8abc1fe465dc09d11187a0") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?d81047098b8abc1fe465dc09d11187a0") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -49,59 +49,60 @@ icon--alternative-offer: "\e001",
 icon--approved-badge: "\e002", 
 icon--arrow: "\e003", 
 icon--attachment-blue: "\e004", 
-icon--bell: "\e005", 
-icon--best-price: "\e006", 
-icon--bullet-list: "\e007", 
-icon--calendar: "\e008", 
-icon--cancellation-terms: "\e009", 
-icon--change-date: "\e00a", 
-icon--checkmark: "\e00b", 
-icon--chevron-button: "\e00c", 
-icon--chevron-l: "\e00d", 
-icon--chevron: "\e00e", 
-icon--clock: "\e00f", 
-icon--close: "\e010", 
-icon--current-location: "\e011", 
-icon--customer-service: "\e012", 
-icon--delivery: "\e013", 
-icon--direct-booking: "\e014", 
-icon--download: "\e015", 
-icon--dropdown-indicator: "\e016", 
-icon--due-dates: "\e017", 
-icon--easy-payment: "\e018", 
-icon--f-a-q: "\e019", 
-icon--filter: "\e01a", 
-icon--hamburger-menu: "\e01b", 
-icon--help-badge: "\e01c", 
-icon--help: "\e01d", 
-icon--higher-ranking: "\e01e", 
-icon--home: "\e01f", 
-icon--info-badge: "\e020", 
-icon--item: "\e021", 
-icon--lightning: "\e022", 
-icon--location: "\e023", 
-icon--lock: "\e024", 
-icon--logo_letters: "\e025", 
-icon--logo: "\e026", 
-icon--mail: "\e027", 
-icon--mobile-phone: "\e028", 
-icon--new-offer: "\e029", 
-icon--percentage: "\e02a", 
-icon--phone: "\e02b", 
-icon--pickup: "\e02c", 
-icon--pressuretag-clock: "\e02d", 
-icon--safe-payment: "\e02e", 
-icon--search: "\e02f", 
-icon--send_message: "\e030", 
-icon--facebook: "\e031", 
-icon--google-plus: "\e032", 
-icon--instagram: "\e033", 
-icon--twitter: "\e034", 
-icon--tag-icon: "\e035", 
-icon--teal-balloon: "\e036", 
-icon--upload: "\e037", 
-icon--use-discounts: "\e038", 
-icon--users: "\e039", 
+icon--autopush: "\e005", 
+icon--bell: "\e006", 
+icon--best-price: "\e007", 
+icon--bullet-list: "\e008", 
+icon--calendar: "\e009", 
+icon--cancellation-terms: "\e00a", 
+icon--change-date: "\e00b", 
+icon--checkmark: "\e00c", 
+icon--chevron-button: "\e00d", 
+icon--chevron-l: "\e00e", 
+icon--chevron: "\e00f", 
+icon--clock: "\e010", 
+icon--close: "\e011", 
+icon--current-location: "\e012", 
+icon--customer-service: "\e013", 
+icon--delivery: "\e014", 
+icon--direct-booking: "\e015", 
+icon--download: "\e016", 
+icon--dropdown-indicator: "\e017", 
+icon--due-dates: "\e018", 
+icon--easy-payment: "\e019", 
+icon--f-a-q: "\e01a", 
+icon--filter: "\e01b", 
+icon--hamburger-menu: "\e01c", 
+icon--help-badge: "\e01d", 
+icon--help: "\e01e", 
+icon--higher-ranking: "\e01f", 
+icon--home: "\e020", 
+icon--info-badge: "\e021", 
+icon--item: "\e022", 
+icon--lightning: "\e023", 
+icon--location: "\e024", 
+icon--lock: "\e025", 
+icon--logo_letters: "\e026", 
+icon--logo: "\e027", 
+icon--mail: "\e028", 
+icon--mobile-phone: "\e029", 
+icon--new-offer: "\e02a", 
+icon--percentage: "\e02b", 
+icon--phone: "\e02c", 
+icon--pickup: "\e02d", 
+icon--pressuretag-clock: "\e02e", 
+icon--safe-payment: "\e02f", 
+icon--search: "\e030", 
+icon--send_message: "\e031", 
+icon--facebook: "\e032", 
+icon--google-plus: "\e033", 
+icon--instagram: "\e034", 
+icon--twitter: "\e035", 
+icon--tag-icon: "\e036", 
+icon--teal-balloon: "\e037", 
+icon--upload: "\e038", 
+icon--use-discounts: "\e039", 
+icon--users: "\e03a", 
 );
 
 // Icons
@@ -140,6 +141,15 @@ icon--users: "\e039",
 }
 .icon--attachment-blue{
 @extend %icon--attachment-blue;
+}
+
+%icon--autopush {
+&:before {
+   content: "#{getIconFromMap($icons, icon--autopush)}";
+ }
+}
+.icon--autopush{
+@extend %icon--autopush;
 }
 
 %icon--bell {
