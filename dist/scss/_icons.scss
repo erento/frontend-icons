@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?d81047098b8abc1fe465dc09d11187a0");
-src:url("" + $erentoIconFontPath + "/icons.eot?d81047098b8abc1fe465dc09d11187a0#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?d81047098b8abc1fe465dc09d11187a0") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?d81047098b8abc1fe465dc09d11187a0") format("truetype");
+src:url("" + $erentoIconFontPath + "/icons.eot?3d670ee9ddf78a0e830e5f369d5d2fd9");
+src:url("" + $erentoIconFontPath + "/icons.eot?3d670ee9ddf78a0e830e5f369d5d2fd9#iefix") format("embedded-opentype"),
+		url("" + $erentoIconFontPath + "/icons.woff?3d670ee9ddf78a0e830e5f369d5d2fd9") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?3d670ee9ddf78a0e830e5f369d5d2fd9") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -103,6 +103,7 @@ icon--teal-balloon: "\e037",
 icon--upload: "\e038", 
 icon--use-discounts: "\e039", 
 icon--users: "\e03a", 
+icon--watching: "\e03b", 
 );
 
 // Icons
@@ -627,4 +628,13 @@ icon--users: "\e03a",
 }
 .icon--users{
 @extend %icon--users;
+}
+
+%icon--watching {
+&:before {
+   content: "#{getIconFromMap($icons, icon--watching)}";
+ }
+}
+.icon--watching{
+@extend %icon--watching;
 }
