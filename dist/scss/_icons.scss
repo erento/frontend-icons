@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?3d670ee9ddf78a0e830e5f369d5d2fd9");
-src:url("" + $erentoIconFontPath + "/icons.eot?3d670ee9ddf78a0e830e5f369d5d2fd9#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?3d670ee9ddf78a0e830e5f369d5d2fd9") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?3d670ee9ddf78a0e830e5f369d5d2fd9") format("truetype");
+src:url("" + $erentoIconFontPath + "/icons.eot?f4e63d665e97234bec52c8c9af2a5336");
+src:url("" + $erentoIconFontPath + "/icons.eot?f4e63d665e97234bec52c8c9af2a5336#iefix") format("embedded-opentype"),
+		url("" + $erentoIconFontPath + "/icons.woff?f4e63d665e97234bec52c8c9af2a5336") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?f4e63d665e97234bec52c8c9af2a5336") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -91,19 +91,20 @@ icon--percentage: "\e02b",
 icon--phone: "\e02c", 
 icon--pickup: "\e02d", 
 icon--pressuretag-clock: "\e02e", 
-icon--safe-payment: "\e02f", 
-icon--search: "\e030", 
-icon--send_message: "\e031", 
-icon--facebook: "\e032", 
-icon--google-plus: "\e033", 
-icon--instagram: "\e034", 
-icon--twitter: "\e035", 
-icon--tag-icon: "\e036", 
-icon--teal-balloon: "\e037", 
-icon--upload: "\e038", 
-icon--use-discounts: "\e039", 
-icon--users: "\e03a", 
-icon--watching: "\e03b", 
+icon--report-flag: "\e02f", 
+icon--safe-payment: "\e030", 
+icon--search: "\e031", 
+icon--send_message: "\e032", 
+icon--facebook: "\e033", 
+icon--google-plus: "\e034", 
+icon--instagram: "\e035", 
+icon--twitter: "\e036", 
+icon--tag-icon: "\e037", 
+icon--teal-balloon: "\e038", 
+icon--upload: "\e039", 
+icon--use-discounts: "\e03a", 
+icon--users: "\e03b", 
+icon--watching: "\e03c", 
 );
 
 // Icons
@@ -520,6 +521,15 @@ icon--watching: "\e03b",
 }
 .icon--pressuretag-clock{
 @extend %icon--pressuretag-clock;
+}
+
+%icon--report-flag {
+&:before {
+   content: "#{getIconFromMap($icons, icon--report-flag)}";
+ }
+}
+.icon--report-flag{
+@extend %icon--report-flag;
 }
 
 %icon--safe-payment {
