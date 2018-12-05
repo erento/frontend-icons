@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>chart-ic</title>
+    <desc>Created with Sketch.</desc>
+    <g id="AUTO-PUSH-FINALIZED" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="chart-ic" transform="translate(1.000000, 3.000000)">
+            <g id="analytics-bars">
+                <path d="M0.6875,16.9285714 L21.3125,16.9285714" id="Shape" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M5.5,7.92857143 L2.75,7.92857143 C2.37030423,7.92857143 2.0625,8.21638838 2.0625,8.57142857 L2.0625,16.9285714 L6.1875,16.9285714 L6.1875,8.57142857 C6.1875,8.21638838 5.87969577,7.92857143 5.5,7.92857143 Z" id="Shape" fill="#000000"></path>
+                <path d="M12.375,0.214285714 L9.625,0.214285714 C9.24530423,0.214285714 8.9375,0.502102661 8.9375,0.857142857 L8.9375,16.9285714 L13.0625,16.9285714 L13.0625,0.857142857 C13.0625,0.502102661 12.7546958,0.214285714 12.375,0.214285714 Z" id="Shape" fill="#000000"></path>
+                <path d="M19.25,4.07142857 L16.5,4.07142857 C16.1203042,4.07142857 15.8125,4.35924552 15.8125,4.71428571 L15.8125,16.9285714 L19.9375,16.9285714 L19.9375,4.71428571 C19.9375,4.35924552 19.6296958,4.07142857 19.25,4.07142857 Z" id="Shape" fill="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>

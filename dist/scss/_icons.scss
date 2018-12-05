@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?f4e63d665e97234bec52c8c9af2a5336");
-src:url("" + $erentoIconFontPath + "/icons.eot?f4e63d665e97234bec52c8c9af2a5336#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?f4e63d665e97234bec52c8c9af2a5336") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?f4e63d665e97234bec52c8c9af2a5336") format("truetype");
+src:url("" + $erentoIconFontPath + "/icons.eot?08d2eda3bb7a776260afc32f4e6fe78e");
+src:url("" + $erentoIconFontPath + "/icons.eot?08d2eda3bb7a776260afc32f4e6fe78e#iefix") format("embedded-opentype"),
+		url("" + $erentoIconFontPath + "/icons.woff?08d2eda3bb7a776260afc32f4e6fe78e") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?08d2eda3bb7a776260afc32f4e6fe78e") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -56,55 +56,56 @@ icon--bullet-list: "\e008",
 icon--calendar: "\e009", 
 icon--cancellation-terms: "\e00a", 
 icon--change-date: "\e00b", 
-icon--checkmark: "\e00c", 
-icon--chevron-button: "\e00d", 
-icon--chevron-l: "\e00e", 
-icon--chevron: "\e00f", 
-icon--clock: "\e010", 
-icon--close: "\e011", 
-icon--current-location: "\e012", 
-icon--customer-service: "\e013", 
-icon--delivery: "\e014", 
-icon--direct-booking: "\e015", 
-icon--download: "\e016", 
-icon--dropdown-indicator: "\e017", 
-icon--due-dates: "\e018", 
-icon--easy-payment: "\e019", 
-icon--f-a-q: "\e01a", 
-icon--filter: "\e01b", 
-icon--hamburger-menu: "\e01c", 
-icon--help-badge: "\e01d", 
-icon--help: "\e01e", 
-icon--higher-ranking: "\e01f", 
-icon--home: "\e020", 
-icon--info-badge: "\e021", 
-icon--item: "\e022", 
-icon--lightning: "\e023", 
-icon--location: "\e024", 
-icon--lock: "\e025", 
-icon--logo_letters: "\e026", 
-icon--logo: "\e027", 
-icon--mail: "\e028", 
-icon--mobile-phone: "\e029", 
-icon--new-offer: "\e02a", 
-icon--percentage: "\e02b", 
-icon--phone: "\e02c", 
-icon--pickup: "\e02d", 
-icon--pressuretag-clock: "\e02e", 
-icon--report-flag: "\e02f", 
-icon--safe-payment: "\e030", 
-icon--search: "\e031", 
-icon--send_message: "\e032", 
-icon--facebook: "\e033", 
-icon--google-plus: "\e034", 
-icon--instagram: "\e035", 
-icon--twitter: "\e036", 
-icon--tag-icon: "\e037", 
-icon--teal-balloon: "\e038", 
-icon--upload: "\e039", 
-icon--use-discounts: "\e03a", 
-icon--users: "\e03b", 
-icon--watching: "\e03c", 
+icon--chart: "\e00c", 
+icon--checkmark: "\e00d", 
+icon--chevron-button: "\e00e", 
+icon--chevron-l: "\e00f", 
+icon--chevron: "\e010", 
+icon--clock: "\e011", 
+icon--close: "\e012", 
+icon--current-location: "\e013", 
+icon--customer-service: "\e014", 
+icon--delivery: "\e015", 
+icon--direct-booking: "\e016", 
+icon--download: "\e017", 
+icon--dropdown-indicator: "\e018", 
+icon--due-dates: "\e019", 
+icon--easy-payment: "\e01a", 
+icon--f-a-q: "\e01b", 
+icon--filter: "\e01c", 
+icon--hamburger-menu: "\e01d", 
+icon--help-badge: "\e01e", 
+icon--help: "\e01f", 
+icon--higher-ranking: "\e020", 
+icon--home: "\e021", 
+icon--info-badge: "\e022", 
+icon--item: "\e023", 
+icon--lightning: "\e024", 
+icon--location: "\e025", 
+icon--lock: "\e026", 
+icon--logo_letters: "\e027", 
+icon--logo: "\e028", 
+icon--mail: "\e029", 
+icon--mobile-phone: "\e02a", 
+icon--new-offer: "\e02b", 
+icon--percentage: "\e02c", 
+icon--phone: "\e02d", 
+icon--pickup: "\e02e", 
+icon--pressuretag-clock: "\e02f", 
+icon--report-flag: "\e030", 
+icon--safe-payment: "\e031", 
+icon--search: "\e032", 
+icon--send_message: "\e033", 
+icon--facebook: "\e034", 
+icon--google-plus: "\e035", 
+icon--instagram: "\e036", 
+icon--twitter: "\e037", 
+icon--tag-icon: "\e038", 
+icon--teal-balloon: "\e039", 
+icon--upload: "\e03a", 
+icon--use-discounts: "\e03b", 
+icon--users: "\e03c", 
+icon--watching: "\e03d", 
 );
 
 // Icons
@@ -206,6 +207,15 @@ icon--watching: "\e03c",
 }
 .icon--change-date{
 @extend %icon--change-date;
+}
+
+%icon--chart {
+&:before {
+   content: "#{getIconFromMap($icons, icon--chart)}";
+ }
+}
+.icon--chart{
+@extend %icon--chart;
 }
 
 %icon--checkmark {
