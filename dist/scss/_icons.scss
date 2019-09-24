@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?08d2eda3bb7a776260afc32f4e6fe78e");
-src:url("" + $erentoIconFontPath + "/icons.eot?08d2eda3bb7a776260afc32f4e6fe78e#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?08d2eda3bb7a776260afc32f4e6fe78e") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?08d2eda3bb7a776260afc32f4e6fe78e") format("truetype");
+src:url("" + $erentoIconFontPath + "/icons.eot?f3b7b7b4da7a858bc9bfd027fac0d86c");
+src:url("" + $erentoIconFontPath + "/icons.eot?f3b7b7b4da7a858bc9bfd027fac0d86c#iefix") format("embedded-opentype"),
+		url("" + $erentoIconFontPath + "/icons.woff?f3b7b7b4da7a858bc9bfd027fac0d86c") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?f3b7b7b4da7a858bc9bfd027fac0d86c") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -102,10 +102,11 @@ icon--instagram: "\e036",
 icon--twitter: "\e037", 
 icon--tag-icon: "\e038", 
 icon--teal-balloon: "\e039", 
-icon--upload: "\e03a", 
-icon--use-discounts: "\e03b", 
-icon--users: "\e03c", 
-icon--watching: "\e03d", 
+icon--trashcan: "\e03a", 
+icon--upload: "\e03b", 
+icon--use-discounts: "\e03c", 
+icon--users: "\e03d", 
+icon--watching: "\e03e", 
 );
 
 // Icons
@@ -621,6 +622,15 @@ icon--watching: "\e03d",
 }
 .icon--teal-balloon{
 @extend %icon--teal-balloon;
+}
+
+%icon--trashcan {
+&:before {
+   content: "#{getIconFromMap($icons, icon--trashcan)}";
+ }
+}
+.icon--trashcan{
+@extend %icon--trashcan;
 }
 
 %icon--upload {
