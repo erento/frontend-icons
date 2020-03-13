@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?8f98b6c3e0ed0edff500c3b711f9fb65");
-src:url("" + $erentoIconFontPath + "/icons.eot?8f98b6c3e0ed0edff500c3b711f9fb65#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?8f98b6c3e0ed0edff500c3b711f9fb65") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?8f98b6c3e0ed0edff500c3b711f9fb65") format("truetype");
+src:url("" + $erentoIconFontPath + "/icons.eot?e9f2efe6b1388b1b4d6982b9c617aba7");
+src:url("" + $erentoIconFontPath + "/icons.eot?e9f2efe6b1388b1b4d6982b9c617aba7#iefix") format("embedded-opentype"),
+		url("" + $erentoIconFontPath + "/icons.woff?e9f2efe6b1388b1b4d6982b9c617aba7") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?e9f2efe6b1388b1b4d6982b9c617aba7") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -46,70 +46,49 @@ font-style:normal;
 $icons: (
 
 icon--alternative-offer: "\e001", 
-icon--approved-badge: "\e002", 
-icon--arrow: "\e003", 
-icon--attachment-blue: "\e004", 
-icon--autopush: "\e005", 
-icon--bell: "\e006", 
-icon--best-price: "\e007", 
-icon--bullet-list: "\e008", 
-icon--calendar: "\e009", 
-icon--cancellation-terms: "\e00a", 
-icon--change-date: "\e00b", 
-icon--chart: "\e00c", 
-icon--checkmark: "\e00d", 
-icon--chevron-button: "\e00e", 
-icon--chevron-l: "\e00f", 
-icon--chevron: "\e010", 
-icon--clock: "\e011", 
-icon--close: "\e012", 
-icon--current-location: "\e013", 
-icon--customer-service: "\e014", 
-icon--delivery: "\e015", 
-icon--direct-booking: "\e016", 
-icon--download: "\e017", 
-icon--dropdown-indicator: "\e018", 
-icon--due-dates: "\e019", 
-icon--easy-payment: "\e01a", 
-icon--f-a-q: "\e01b", 
-icon--filter: "\e01c", 
-icon--hamburger-menu: "\e01d", 
-icon--help-badge: "\e01e", 
-icon--help: "\e01f", 
-icon--higher-ranking: "\e020", 
-icon--home: "\e021", 
-icon--info-badge: "\e022", 
-icon--item: "\e023", 
-icon--lightning: "\e024", 
-icon--location: "\e025", 
-icon--lock: "\e026", 
-icon--logo_letters: "\e027", 
-icon--logo: "\e028", 
-icon--mail: "\e029", 
-icon--mobile-phone: "\e02a", 
-icon--new-offer: "\e02b", 
-icon--percentage: "\e02c", 
-icon--phone: "\e02d", 
-icon--pickup: "\e02e", 
-icon--pressuretag-clock: "\e02f", 
-icon--report-flag: "\e030", 
-icon--safe-payment: "\e031", 
-icon--search: "\e032", 
-icon--send_message: "\e033", 
-icon--facebook: "\e034", 
-icon--google-plus: "\e035", 
-icon--instagram: "\e036", 
-icon--twitter: "\e037", 
-icon--sort-asc: "\e038", 
-icon--sort-desc: "\e039", 
-icon--sort: "\e03a", 
-icon--tag-icon: "\e03b", 
-icon--teal-balloon: "\e03c", 
-icon--trashcan: "\e03d", 
-icon--upload: "\e03e", 
-icon--use-discounts: "\e03f", 
-icon--users: "\e040", 
-icon--watching: "\e041", 
+icon--arrow: "\e002", 
+icon--attachment-blue: "\e003", 
+icon--autopush: "\e004", 
+icon--best-price: "\e005", 
+icon--bullet-list: "\e006", 
+icon--calendar: "\e007", 
+icon--cancellation-terms: "\e008", 
+icon--change-date: "\e009", 
+icon--chart: "\e00a", 
+icon--checkmark: "\e00b", 
+icon--chevron-l: "\e00c", 
+icon--chevron: "\e00d", 
+icon--clock: "\e00e", 
+icon--close: "\e00f", 
+icon--customer-service: "\e010", 
+icon--due-dates: "\e011", 
+icon--easy-payment: "\e012", 
+icon--hamburger-menu: "\e013", 
+icon--help-badge: "\e014", 
+icon--help: "\e015", 
+icon--higher-ranking: "\e016", 
+icon--home: "\e017", 
+icon--info-badge: "\e018", 
+icon--location: "\e019", 
+icon--lock: "\e01a", 
+icon--mail: "\e01b", 
+icon--new-offer: "\e01c", 
+icon--phone: "\e01d", 
+icon--pressuretag-clock: "\e01e", 
+icon--report-flag: "\e01f", 
+icon--search: "\e020", 
+icon--send_message: "\e021", 
+icon--facebook: "\e022", 
+icon--instagram: "\e023", 
+icon--sort-asc: "\e024", 
+icon--sort-desc: "\e025", 
+icon--sort: "\e026", 
+icon--tag-icon: "\e027", 
+icon--trashcan: "\e028", 
+icon--upload: "\e029", 
+icon--use-discounts: "\e02a", 
+icon--users: "\e02b", 
+icon--watching: "\e02c", 
 );
 
 // Icons
@@ -121,15 +100,6 @@ icon--watching: "\e041",
 }
 .icon--alternative-offer{
 @extend %icon--alternative-offer;
-}
-
-%icon--approved-badge {
-&:before {
-   content: "#{getIconFromMap($icons, icon--approved-badge)}";
- }
-}
-.icon--approved-badge{
-@extend %icon--approved-badge;
 }
 
 %icon--arrow {
@@ -157,15 +127,6 @@ icon--watching: "\e041",
 }
 .icon--autopush{
 @extend %icon--autopush;
-}
-
-%icon--bell {
-&:before {
-   content: "#{getIconFromMap($icons, icon--bell)}";
- }
-}
-.icon--bell{
-@extend %icon--bell;
 }
 
 %icon--best-price {
@@ -231,15 +192,6 @@ icon--watching: "\e041",
 @extend %icon--checkmark;
 }
 
-%icon--chevron-button {
-&:before {
-   content: "#{getIconFromMap($icons, icon--chevron-button)}";
- }
-}
-.icon--chevron-button{
-@extend %icon--chevron-button;
-}
-
 %icon--chevron-l {
 &:before {
    content: "#{getIconFromMap($icons, icon--chevron-l)}";
@@ -276,15 +228,6 @@ icon--watching: "\e041",
 @extend %icon--close;
 }
 
-%icon--current-location {
-&:before {
-   content: "#{getIconFromMap($icons, icon--current-location)}";
- }
-}
-.icon--current-location{
-@extend %icon--current-location;
-}
-
 %icon--customer-service {
 &:before {
    content: "#{getIconFromMap($icons, icon--customer-service)}";
@@ -292,42 +235,6 @@ icon--watching: "\e041",
 }
 .icon--customer-service{
 @extend %icon--customer-service;
-}
-
-%icon--delivery {
-&:before {
-   content: "#{getIconFromMap($icons, icon--delivery)}";
- }
-}
-.icon--delivery{
-@extend %icon--delivery;
-}
-
-%icon--direct-booking {
-&:before {
-   content: "#{getIconFromMap($icons, icon--direct-booking)}";
- }
-}
-.icon--direct-booking{
-@extend %icon--direct-booking;
-}
-
-%icon--download {
-&:before {
-   content: "#{getIconFromMap($icons, icon--download)}";
- }
-}
-.icon--download{
-@extend %icon--download;
-}
-
-%icon--dropdown-indicator {
-&:before {
-   content: "#{getIconFromMap($icons, icon--dropdown-indicator)}";
- }
-}
-.icon--dropdown-indicator{
-@extend %icon--dropdown-indicator;
 }
 
 %icon--due-dates {
@@ -346,24 +253,6 @@ icon--watching: "\e041",
 }
 .icon--easy-payment{
 @extend %icon--easy-payment;
-}
-
-%icon--f-a-q {
-&:before {
-   content: "#{getIconFromMap($icons, icon--f-a-q)}";
- }
-}
-.icon--f-a-q{
-@extend %icon--f-a-q;
-}
-
-%icon--filter {
-&:before {
-   content: "#{getIconFromMap($icons, icon--filter)}";
- }
-}
-.icon--filter{
-@extend %icon--filter;
 }
 
 %icon--hamburger-menu {
@@ -420,24 +309,6 @@ icon--watching: "\e041",
 @extend %icon--info-badge;
 }
 
-%icon--item {
-&:before {
-   content: "#{getIconFromMap($icons, icon--item)}";
- }
-}
-.icon--item{
-@extend %icon--item;
-}
-
-%icon--lightning {
-&:before {
-   content: "#{getIconFromMap($icons, icon--lightning)}";
- }
-}
-.icon--lightning{
-@extend %icon--lightning;
-}
-
 %icon--location {
 &:before {
    content: "#{getIconFromMap($icons, icon--location)}";
@@ -456,24 +327,6 @@ icon--watching: "\e041",
 @extend %icon--lock;
 }
 
-%icon--logo_letters {
-&:before {
-   content: "#{getIconFromMap($icons, icon--logo_letters)}";
- }
-}
-.icon--logo_letters{
-@extend %icon--logo_letters;
-}
-
-%icon--logo {
-&:before {
-   content: "#{getIconFromMap($icons, icon--logo)}";
- }
-}
-.icon--logo{
-@extend %icon--logo;
-}
-
 %icon--mail {
 &:before {
    content: "#{getIconFromMap($icons, icon--mail)}";
@@ -481,15 +334,6 @@ icon--watching: "\e041",
 }
 .icon--mail{
 @extend %icon--mail;
-}
-
-%icon--mobile-phone {
-&:before {
-   content: "#{getIconFromMap($icons, icon--mobile-phone)}";
- }
-}
-.icon--mobile-phone{
-@extend %icon--mobile-phone;
 }
 
 %icon--new-offer {
@@ -501,15 +345,6 @@ icon--watching: "\e041",
 @extend %icon--new-offer;
 }
 
-%icon--percentage {
-&:before {
-   content: "#{getIconFromMap($icons, icon--percentage)}";
- }
-}
-.icon--percentage{
-@extend %icon--percentage;
-}
-
 %icon--phone {
 &:before {
    content: "#{getIconFromMap($icons, icon--phone)}";
@@ -517,15 +352,6 @@ icon--watching: "\e041",
 }
 .icon--phone{
 @extend %icon--phone;
-}
-
-%icon--pickup {
-&:before {
-   content: "#{getIconFromMap($icons, icon--pickup)}";
- }
-}
-.icon--pickup{
-@extend %icon--pickup;
 }
 
 %icon--pressuretag-clock {
@@ -544,15 +370,6 @@ icon--watching: "\e041",
 }
 .icon--report-flag{
 @extend %icon--report-flag;
-}
-
-%icon--safe-payment {
-&:before {
-   content: "#{getIconFromMap($icons, icon--safe-payment)}";
- }
-}
-.icon--safe-payment{
-@extend %icon--safe-payment;
 }
 
 %icon--search {
@@ -582,15 +399,6 @@ icon--watching: "\e041",
 @extend %icon--facebook;
 }
 
-%icon--google-plus {
-&:before {
-   content: "#{getIconFromMap($icons, icon--google-plus)}";
- }
-}
-.icon--google-plus{
-@extend %icon--google-plus;
-}
-
 %icon--instagram {
 &:before {
    content: "#{getIconFromMap($icons, icon--instagram)}";
@@ -598,15 +406,6 @@ icon--watching: "\e041",
 }
 .icon--instagram{
 @extend %icon--instagram;
-}
-
-%icon--twitter {
-&:before {
-   content: "#{getIconFromMap($icons, icon--twitter)}";
- }
-}
-.icon--twitter{
-@extend %icon--twitter;
 }
 
 %icon--sort-asc {
@@ -643,15 +442,6 @@ icon--watching: "\e041",
 }
 .icon--tag-icon{
 @extend %icon--tag-icon;
-}
-
-%icon--teal-balloon {
-&:before {
-   content: "#{getIconFromMap($icons, icon--teal-balloon)}";
- }
-}
-.icon--teal-balloon{
-@extend %icon--teal-balloon;
 }
 
 %icon--trashcan {
