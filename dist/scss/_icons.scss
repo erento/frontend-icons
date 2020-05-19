@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?e9f2efe6b1388b1b4d6982b9c617aba7");
-src:url("" + $erentoIconFontPath + "/icons.eot?e9f2efe6b1388b1b4d6982b9c617aba7#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?e9f2efe6b1388b1b4d6982b9c617aba7") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?e9f2efe6b1388b1b4d6982b9c617aba7") format("truetype");
+src:url("" + $erentoIconFontPath + "/icons.eot?f2887324904abce0a2eedb3eb607d65e");
+src:url("" + $erentoIconFontPath + "/icons.eot?f2887324904abce0a2eedb3eb607d65e#iefix") format("embedded-opentype"),
+		url("" + $erentoIconFontPath + "/icons.woff?f2887324904abce0a2eedb3eb607d65e") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?f2887324904abce0a2eedb3eb607d65e") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -68,27 +68,28 @@ icon--help-badge: "\e014",
 icon--help: "\e015", 
 icon--higher-ranking: "\e016", 
 icon--home: "\e017", 
-icon--info-badge: "\e018", 
-icon--location: "\e019", 
-icon--lock: "\e01a", 
-icon--mail: "\e01b", 
-icon--new-offer: "\e01c", 
-icon--phone: "\e01d", 
-icon--pressuretag-clock: "\e01e", 
-icon--report-flag: "\e01f", 
-icon--search: "\e020", 
-icon--send_message: "\e021", 
-icon--facebook: "\e022", 
-icon--instagram: "\e023", 
-icon--sort-asc: "\e024", 
-icon--sort-desc: "\e025", 
-icon--sort: "\e026", 
-icon--tag-icon: "\e027", 
-icon--trashcan: "\e028", 
-icon--upload: "\e029", 
-icon--use-discounts: "\e02a", 
-icon--users: "\e02b", 
-icon--watching: "\e02c", 
+icon--image: "\e018", 
+icon--info-badge: "\e019", 
+icon--location: "\e01a", 
+icon--lock: "\e01b", 
+icon--mail: "\e01c", 
+icon--new-offer: "\e01d", 
+icon--phone: "\e01e", 
+icon--pressuretag-clock: "\e01f", 
+icon--report-flag: "\e020", 
+icon--search: "\e021", 
+icon--send_message: "\e022", 
+icon--facebook: "\e023", 
+icon--instagram: "\e024", 
+icon--sort-asc: "\e025", 
+icon--sort-desc: "\e026", 
+icon--sort: "\e027", 
+icon--tag-icon: "\e028", 
+icon--trashcan: "\e029", 
+icon--upload: "\e02a", 
+icon--use-discounts: "\e02b", 
+icon--users: "\e02c", 
+icon--watching: "\e02d", 
 );
 
 // Icons
@@ -298,6 +299,15 @@ icon--watching: "\e02c",
 }
 .icon--home{
 @extend %icon--home;
+}
+
+%icon--image {
+&:before {
+   content: "#{getIconFromMap($icons, icon--image)}";
+ }
+}
+.icon--image{
+@extend %icon--image;
 }
 
 %icon--info-badge {
