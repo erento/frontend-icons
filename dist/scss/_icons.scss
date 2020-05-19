@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?bacf36da691d221d33cdf0806bf637de");
-src:url("" + $erentoIconFontPath + "/icons.eot?bacf36da691d221d33cdf0806bf637de#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?bacf36da691d221d33cdf0806bf637de") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?bacf36da691d221d33cdf0806bf637de") format("truetype");
+src:url("" + $erentoIconFontPath + "/icons.eot?f2887324904abce0a2eedb3eb607d65e");
+src:url("" + $erentoIconFontPath + "/icons.eot?f2887324904abce0a2eedb3eb607d65e#iefix") format("embedded-opentype"),
+		url("" + $erentoIconFontPath + "/icons.woff?f2887324904abce0a2eedb3eb607d65e") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?f2887324904abce0a2eedb3eb607d65e") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -45,51 +45,51 @@ font-style:normal;
 
 $icons: (
 
-icon--alternative-offer: "\e001",
-icon--arrow: "\e002",
-icon--attachment-blue: "\e003",
-icon--autopush: "\e004",
-icon--best-price: "\e005",
-icon--bullet-list: "\e006",
-icon--calendar: "\e007",
-icon--cancellation-terms: "\e008",
-icon--change-date: "\e009",
-icon--chart: "\e00a",
-icon--checkmark: "\e00b",
-icon--chevron-l: "\e00c",
-icon--chevron: "\e00d",
-icon--clock: "\e00e",
-icon--close: "\e00f",
-icon--customer-service: "\e010",
-icon--due-dates: "\e011",
-icon--easy-payment: "\e012",
-icon--hamburger-menu: "\e013",
-icon--help-badge: "\e014",
-icon--help: "\e015",
-icon--higher-ranking: "\e016",
-icon--home: "\e017",
-icon--images: "\e018",
-icon--info-badge: "\e019",
-icon--location: "\e01a",
-icon--lock: "\e01b",
-icon--mail: "\e01c",
-icon--new-offer: "\e01d",
-icon--phone: "\e01e",
-icon--pressuretag-clock: "\e01f",
-icon--report-flag: "\e020",
-icon--search: "\e021",
-icon--send_message: "\e022",
-icon--facebook: "\e023",
-icon--instagram: "\e024",
-icon--sort-asc: "\e025",
-icon--sort-desc: "\e026",
-icon--sort: "\e027",
-icon--tag-icon: "\e028",
-icon--trashcan: "\e029",
-icon--upload: "\e02a",
-icon--use-discounts: "\e02b",
-icon--users: "\e02c",
-icon--watching: "\e02d",
+icon--alternative-offer: "\e001", 
+icon--arrow: "\e002", 
+icon--attachment-blue: "\e003", 
+icon--autopush: "\e004", 
+icon--best-price: "\e005", 
+icon--bullet-list: "\e006", 
+icon--calendar: "\e007", 
+icon--cancellation-terms: "\e008", 
+icon--change-date: "\e009", 
+icon--chart: "\e00a", 
+icon--checkmark: "\e00b", 
+icon--chevron-l: "\e00c", 
+icon--chevron: "\e00d", 
+icon--clock: "\e00e", 
+icon--close: "\e00f", 
+icon--customer-service: "\e010", 
+icon--due-dates: "\e011", 
+icon--easy-payment: "\e012", 
+icon--hamburger-menu: "\e013", 
+icon--help-badge: "\e014", 
+icon--help: "\e015", 
+icon--higher-ranking: "\e016", 
+icon--home: "\e017", 
+icon--image: "\e018", 
+icon--info-badge: "\e019", 
+icon--location: "\e01a", 
+icon--lock: "\e01b", 
+icon--mail: "\e01c", 
+icon--new-offer: "\e01d", 
+icon--phone: "\e01e", 
+icon--pressuretag-clock: "\e01f", 
+icon--report-flag: "\e020", 
+icon--search: "\e021", 
+icon--send_message: "\e022", 
+icon--facebook: "\e023", 
+icon--instagram: "\e024", 
+icon--sort-asc: "\e025", 
+icon--sort-desc: "\e026", 
+icon--sort: "\e027", 
+icon--tag-icon: "\e028", 
+icon--trashcan: "\e029", 
+icon--upload: "\e02a", 
+icon--use-discounts: "\e02b", 
+icon--users: "\e02c", 
+icon--watching: "\e02d", 
 );
 
 // Icons
@@ -301,13 +301,13 @@ icon--watching: "\e02d",
 @extend %icon--home;
 }
 
-%icon--images {
+%icon--image {
 &:before {
-   content: "#{getIconFromMap($icons, icon--images)}";
+   content: "#{getIconFromMap($icons, icon--image)}";
  }
 }
-.icon--images{
-@extend %icon--images;
+.icon--image{
+@extend %icon--image;
 }
 
 %icon--info-badge {
