@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?f2887324904abce0a2eedb3eb607d65e");
-src:url("" + $erentoIconFontPath + "/icons.eot?f2887324904abce0a2eedb3eb607d65e#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?f2887324904abce0a2eedb3eb607d65e") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?f2887324904abce0a2eedb3eb607d65e") format("truetype");
+src:url("" + $erentoIconFontPath + "/icons.eot?b0424f03b6515d71ba961ca055f5a693");
+src:url("" + $erentoIconFontPath + "/icons.eot?b0424f03b6515d71ba961ca055f5a693#iefix") format("embedded-opentype"),
+		url("" + $erentoIconFontPath + "/icons.woff?b0424f03b6515d71ba961ca055f5a693") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?b0424f03b6515d71ba961ca055f5a693") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -77,19 +77,21 @@ icon--new-offer: "\e01d",
 icon--phone: "\e01e", 
 icon--pressuretag-clock: "\e01f", 
 icon--report-flag: "\e020", 
-icon--search: "\e021", 
-icon--send_message: "\e022", 
-icon--facebook: "\e023", 
-icon--instagram: "\e024", 
-icon--sort-asc: "\e025", 
-icon--sort-desc: "\e026", 
-icon--sort: "\e027", 
-icon--tag-icon: "\e028", 
-icon--trashcan: "\e029", 
-icon--upload: "\e02a", 
-icon--use-discounts: "\e02b", 
-icon--users: "\e02c", 
-icon--watching: "\e02d", 
+icon--rotate-left: "\e021", 
+icon--rotate-right: "\e022", 
+icon--search: "\e023", 
+icon--send_message: "\e024", 
+icon--facebook: "\e025", 
+icon--instagram: "\e026", 
+icon--sort-asc: "\e027", 
+icon--sort-desc: "\e028", 
+icon--sort: "\e029", 
+icon--tag-icon: "\e02a", 
+icon--trashcan: "\e02b", 
+icon--upload: "\e02c", 
+icon--use-discounts: "\e02d", 
+icon--users: "\e02e", 
+icon--watching: "\e02f", 
 );
 
 // Icons
@@ -380,6 +382,24 @@ icon--watching: "\e02d",
 }
 .icon--report-flag{
 @extend %icon--report-flag;
+}
+
+%icon--rotate-left {
+&:before {
+   content: "#{getIconFromMap($icons, icon--rotate-left)}";
+ }
+}
+.icon--rotate-left{
+@extend %icon--rotate-left;
+}
+
+%icon--rotate-right {
+&:before {
+   content: "#{getIconFromMap($icons, icon--rotate-right)}";
+ }
+}
+.icon--rotate-right{
+@extend %icon--rotate-right;
 }
 
 %icon--search {
