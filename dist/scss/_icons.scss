@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?b0424f03b6515d71ba961ca055f5a693");
-src:url("" + $erentoIconFontPath + "/icons.eot?b0424f03b6515d71ba961ca055f5a693#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?b0424f03b6515d71ba961ca055f5a693") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?b0424f03b6515d71ba961ca055f5a693") format("truetype");
+src:url("" + $erentoIconFontPath + "/icons.eot?4db3976435cf11d437124c6e75ee095c");
+src:url("" + $erentoIconFontPath + "/icons.eot?4db3976435cf11d437124c6e75ee095c#iefix") format("embedded-opentype"),
+		url("" + $erentoIconFontPath + "/icons.woff?4db3976435cf11d437124c6e75ee095c") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?4db3976435cf11d437124c6e75ee095c") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -60,38 +60,39 @@ icon--chevron-l: "\e00c",
 icon--chevron: "\e00d", 
 icon--clock: "\e00e", 
 icon--close: "\e00f", 
-icon--customer-service: "\e010", 
-icon--due-dates: "\e011", 
-icon--easy-payment: "\e012", 
-icon--hamburger-menu: "\e013", 
-icon--help-badge: "\e014", 
-icon--help: "\e015", 
-icon--higher-ranking: "\e016", 
-icon--home: "\e017", 
-icon--image: "\e018", 
-icon--info-badge: "\e019", 
-icon--location: "\e01a", 
-icon--lock: "\e01b", 
-icon--mail: "\e01c", 
-icon--new-offer: "\e01d", 
-icon--phone: "\e01e", 
-icon--pressuretag-clock: "\e01f", 
-icon--report-flag: "\e020", 
-icon--rotate-left: "\e021", 
-icon--rotate-right: "\e022", 
-icon--search: "\e023", 
-icon--send_message: "\e024", 
-icon--facebook: "\e025", 
-icon--instagram: "\e026", 
-icon--sort-asc: "\e027", 
-icon--sort-desc: "\e028", 
-icon--sort: "\e029", 
-icon--tag-icon: "\e02a", 
-icon--trashcan: "\e02b", 
-icon--upload: "\e02c", 
-icon--use-discounts: "\e02d", 
-icon--users: "\e02e", 
-icon--watching: "\e02f", 
+icon--compass: "\e010", 
+icon--customer-service: "\e011", 
+icon--due-dates: "\e012", 
+icon--easy-payment: "\e013", 
+icon--hamburger-menu: "\e014", 
+icon--help-badge: "\e015", 
+icon--help: "\e016", 
+icon--higher-ranking: "\e017", 
+icon--home: "\e018", 
+icon--image: "\e019", 
+icon--info-badge: "\e01a", 
+icon--location: "\e01b", 
+icon--lock: "\e01c", 
+icon--mail: "\e01d", 
+icon--new-offer: "\e01e", 
+icon--phone: "\e01f", 
+icon--pressuretag-clock: "\e020", 
+icon--report-flag: "\e021", 
+icon--rotate-left: "\e022", 
+icon--rotate-right: "\e023", 
+icon--search: "\e024", 
+icon--send_message: "\e025", 
+icon--facebook: "\e026", 
+icon--instagram: "\e027", 
+icon--sort-asc: "\e028", 
+icon--sort-desc: "\e029", 
+icon--sort: "\e02a", 
+icon--tag-icon: "\e02b", 
+icon--trashcan: "\e02c", 
+icon--upload: "\e02d", 
+icon--use-discounts: "\e02e", 
+icon--users: "\e02f", 
+icon--watching: "\e030", 
 );
 
 // Icons
@@ -229,6 +230,15 @@ icon--watching: "\e02f",
 }
 .icon--close{
 @extend %icon--close;
+}
+
+%icon--compass {
+&:before {
+   content: "#{getIconFromMap($icons, icon--compass)}";
+ }
+}
+.icon--compass{
+@extend %icon--compass;
 }
 
 %icon--customer-service {
