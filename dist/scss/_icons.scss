@@ -16,10 +16,10 @@
 
 @font-face {
   font-family:"icons";
-src:url("" + $erentoIconFontPath + "/icons.eot?4db3976435cf11d437124c6e75ee095c");
-src:url("" + $erentoIconFontPath + "/icons.eot?4db3976435cf11d437124c6e75ee095c#iefix") format("embedded-opentype"),
-		url("" + $erentoIconFontPath + "/icons.woff?4db3976435cf11d437124c6e75ee095c") format("woff"),
-		url("" + $erentoIconFontPath + "/icons.ttf?4db3976435cf11d437124c6e75ee095c") format("truetype");
+src:url("" + $erentoIconFontPath + "/icons.eot?639873b41fdb57902719c4c64ab59ee1");
+src:url("" + $erentoIconFontPath + "/icons.eot?639873b41fdb57902719c4c64ab59ee1#iefix") format("embedded-opentype"),
+		url("" + $erentoIconFontPath + "/icons.woff?639873b41fdb57902719c4c64ab59ee1") format("woff"),
+		url("" + $erentoIconFontPath + "/icons.ttf?639873b41fdb57902719c4c64ab59ee1") format("truetype");
 font-weight:normal;
 font-style:normal;
 }
@@ -84,15 +84,16 @@ icon--search: "\e024",
 icon--send_message: "\e025", 
 icon--facebook: "\e026", 
 icon--instagram: "\e027", 
-icon--sort-asc: "\e028", 
-icon--sort-desc: "\e029", 
-icon--sort: "\e02a", 
-icon--tag-icon: "\e02b", 
-icon--trashcan: "\e02c", 
-icon--upload: "\e02d", 
-icon--use-discounts: "\e02e", 
-icon--users: "\e02f", 
-icon--watching: "\e030", 
+icon--notification-bell: "\e028", 
+icon--sort-asc: "\e029", 
+icon--sort-desc: "\e02a", 
+icon--sort: "\e02b", 
+icon--tag-icon: "\e02c", 
+icon--trashcan: "\e02d", 
+icon--upload: "\e02e", 
+icon--use-discounts: "\e02f", 
+icon--users: "\e030", 
+icon--watching: "\e031", 
 );
 
 // Icons
@@ -446,6 +447,15 @@ icon--watching: "\e030",
 }
 .icon--instagram{
 @extend %icon--instagram;
+}
+
+%icon--notification-bell {
+&:before {
+   content: "#{getIconFromMap($icons, icon--notification-bell)}";
+ }
+}
+.icon--notification-bell{
+@extend %icon--notification-bell;
 }
 
 %icon--sort-asc {
