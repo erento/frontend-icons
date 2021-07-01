@@ -34,4 +34,4 @@ git tag <NEW-VERSION>
 git push origin <NEW-VERSION>
 ```
 
-On [frontend-som](https://github.com/erento/frontend-som/blob/3de866f38222ab8f54ce0a7143f3d83f825fb898/package.json#L66) change 
+In frontend-som change the tag version of `frontend-icons` in [package.json](https://github.com/erento/frontend-som/blob/3de866f38222ab8f54ce0a7143f3d83f825fb898/package.json#L66).
