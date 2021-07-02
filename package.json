@@ -1,11 +1,12 @@
 {
   "name": "frontend-icons",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "Module for custom icons for erento frontends",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf ./dist && grunt"
+    "build": "rm -rf ./dist && grunt",
+    "grunt": "grunt"
   },
   "author": "",
   "license": "ISC",
